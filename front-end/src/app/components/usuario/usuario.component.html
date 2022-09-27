@@ -1,0 +1,26 @@
+<button (click)="abrirModal()" class="btn btn-success" style="margin-bottom: 30px;">
+    agregar usuario
+</button>
+
+<div *ngIf="modalswitch == true">
+    <app-add-usuario></app-add-usuario>
+</div>
+
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>creado</td>
+    </tr>
+    <tr *ngFor="let x of usuarios">
+        <td>{{ x.id }}</td>
+        <td>{{ x.nombre }}</td>
+        <td>{{ x.apellido}}</td>
+        <td>{{ x.created_at}} </td>
+        <td>
+          <!--   <button class="btn btn-primary" [routerLink]='["/usuarios/" +  x.id  ]'>Editar</button> -->
+            <button class="btn btn-danger" (click)="deleteUsuario(x.id)">Eliminar</button>
+        </td>
+    </tr>
+</table>

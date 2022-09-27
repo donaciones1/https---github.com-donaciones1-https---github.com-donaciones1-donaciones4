@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="modal1">
+        <label>nombre</label>
+        <input type="text" name="nombre" class="form-control" [(ngModel)]="usuario.nombre">
+        <label>apellido</label>
+        <input type="text" name="apellido" class="form-control" [(ngModel)]="usuario.apellido">
+        <input type="hidden" name="created_at" class="form-control" [(ngModel)]="usuario.created_at">
+        <button class="boton" (click)="saveUsuario()">guardar</button>
+    </div>
+</div>

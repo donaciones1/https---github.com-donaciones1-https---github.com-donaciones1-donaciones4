@@ -1,0 +1,17 @@
+:host .modal1{
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.boton{
+    margin: 10px;
+    outline: none;
+    border: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    color: wheat;
+}
